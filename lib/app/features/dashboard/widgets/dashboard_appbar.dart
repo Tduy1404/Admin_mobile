@@ -14,16 +14,17 @@ class DashboardAppBar extends StatelessWidget implements PreferredSizeWidget {
             elevation: 2, // Đổ bóng nhẹ
       title: Row(
         children: [
-          const Icon(Icons.departure_board_outlined, size: 30, color: Colors.lightGreen),
+          const Icon(Icons.departure_board_outlined, size: 30, color: Colors.amber),
           const SizedBox(width: 10), // Khoảng cách giữa icon và text
           const Text(
             "BUS MAP",
-            style: TextStyle(fontWeight: FontWeight.bold, color: Colors.lightGreen),
+            style: TextStyle(fontWeight: FontWeight.bold, color: Colors.amber),
           ),
         ],
       ),
       leading: IconButton(
         icon: const Icon(Icons.menu),
+
         onPressed: () => scaffoldKey.currentState?.openDrawer(),
       ),
 
